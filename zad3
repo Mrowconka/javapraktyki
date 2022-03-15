@@ -1,0 +1,26 @@
+package olgamrowca;
+import java.util.Scanner;
+
+public class zadanie3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Podaj wartosc kupowanego produktu");
+		double wartosc= keyboard.nextDouble();
+		
+		double podatekStanowy = wartosc*0.04;
+		double podatekLokalny = wartosc*0.02;
+		double cenaLaczna = wartosc + podatekStanowy + podatekLokalny;
+		System.out.println("Podatek stanowy wynosi :" + podatekStanowy);
+		System.out.println("Podatek lokalny wynosi :" + podatekLokalny);
+		System.out.println("Łączna wartość produktu wynosi :" + cenaLaczna);
+		
+		
+		
+		
+
+	}
+
+}
