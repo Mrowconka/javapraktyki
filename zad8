@@ -1,0 +1,22 @@
+package olgamrowca;
+import java.util.Scanner;
+
+public class zadanie8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print("Podaj nazwe ulubionego miasta : ");
+		String miasto = keyboard.nextLine();
+		int dlugosc = miasto.length();
+		String duze = miasto.toUpperCase();
+		String male = miasto.toLowerCase();
+		char znak = miasto.charAt(0);
+		
+		System.out.println("Liczba znaków w nazwie miasta wynosi :" +dlugosc );
+		System.out.println("Nazwa miasta zapisaną wielkimi literami: " + duze);
+		System.out.println("Nazwa miasta zapisana małymi literami " + male );
+		System.out.println("Pierwszy znak nazwy miasta :" +znak);
+	}
+
+}
