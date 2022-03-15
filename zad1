@@ -1,0 +1,26 @@
+package olgamrowca;
+
+public class zadanie1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String name;
+		int age;
+		double annualPay;
+		
+		name="Olga Mrowca";
+		age= 17;
+		annualPay=5000.0;
+		
+		System.out.print("Nazywam się,"+name);
+		System.out.print("mam"+age );
+		System.out.println("lat");
+		System.out.print("i chcę zarabiać "+annualPay);
+		System.out.print("złotych rocznie.");
+		
+		
+
+	}
+
+}
