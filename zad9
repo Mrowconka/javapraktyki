@@ -1,0 +1,31 @@
+package olgamrowca;
+import java.util.Scanner;
+
+public class zadanie9 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+				double cenaPosilku;
+				double podatek;
+				double napiwek;
+		        double zPodatkiem;
+		        double sumaWszystkiego;
+		        
+		        System.out.println("Podaj cene posiłku :");
+		        cenaPosilku = keyboard.nextDouble();
+		        podatek = cenaPosilku* 0.0675;
+		        zPodatkiem = cenaPosilku + podatek;
+		        napiwek= zPodatkiem* 0.20;
+		        sumaWszystkiego =cenaPosilku + podatek + napiwek;
+		        
+		        System.out.println("Cena posilku wynosi :" + cenaPosilku);
+		        System.out.println("Podatek wynosi :" + podatek );
+		        System.out.println("Napiwek wynosi :" + napiwek);
+		        System.out.println("Cena wszystkiego wynosi :" + sumaWszystkiego);
+
+
+
+	}
+
+}
