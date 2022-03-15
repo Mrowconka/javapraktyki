@@ -1,0 +1,21 @@
+package olgamrowca;
+import java.util.Scanner;
+
+public class zadanie5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Podaj liczbę zjedzonych ciasteczek:");
+		int liczbaZjedzonychCiasteczek = keyboard.nextInt();
+		
+		int ciasteczkoKcal = 30;
+		int liczbaSkonsumowanychKalorii = liczbaZjedzonychCiasteczek * ciasteczkoKcal;
+		
+		System.out.print("Liczba skonsumowanych kalorii wynosi : " + liczbaSkonsumowanychKalorii);
+		
+
+	}
+
+}
