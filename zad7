@@ -1,0 +1,19 @@
+package olgamrowca;
+import java.util.Scanner;
+
+public class zadanie7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print("Wprowadz cene detaliczna płytki :");
+		double cenaDetaliczna = keyboard.nextDouble();
+		
+		double zysk = cenaDetaliczna*0.4;
+		
+		System.out.print("Zysk wynosi :" + zysk);
+		
+
+	}
+
+}
