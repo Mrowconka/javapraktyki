@@ -1,0 +1,22 @@
+package olgamrowca;
+import java.util.Scanner;
+
+public class zadanie4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		
+		System.out.println("Podaj liczbę przejechanych kilometrów ");
+		double przejechaneKilometry= keyboard.nextDouble();
+		
+		System.out.println("Podaj liczbę zużutych litrów paliwa");
+		double litryPaliwa = keyboard.nextDouble();
+		
+		double kilometryNaLitrze = przejechaneKilometry / litryPaliwa;
+		
+		System.out.println("Liczba kilometrów przejechanych na litrze paliwa wynosi :" + kilometryNaLitrze);
+
+	}
+
+}
