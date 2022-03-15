@@ -1,0 +1,23 @@
+package olgamrowca;
+
+public class zadanie2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String firstName;
+		String middleName;
+		String lastName;
+		
+		firstName="Olga";
+		middleName="Anna";
+		lastName="Mrowca";
+		
+		char firstInitial = 'O';
+		char middleInitial='A';
+		char lastInitial= 'M';
+		System.out.print(firstName+ "\n" + middleName +"\n" +lastName + "\n" + firstInitial + middleInitial + lastInitial);
+
+	}
+
+}
