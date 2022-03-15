@@ -1,0 +1,23 @@
+package olgamrowca;
+import java.util.Scanner;
+
+public class zadanie6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Wprowadz wyniki z 3 testów");
+		System.out.print("wynik pierwszego testu :");
+		int wynikPierwszegoTestu = keyboard.nextInt();
+		System.out.print("Wynik drugiego testu:");
+		int wynikDrugiegoTestu = keyboard.nextInt();
+		System.out.print("Wynik trzeciego testu:");
+		int wynikTrzeciegoTestu = keyboard.nextInt();
+		
+		double srednia = (wynikPierwszegoTestu + wynikDrugiegoTestu + wynikTrzeciegoTestu) / 3;
+		
+		System.out.print("Twoja Srednia wynosi :" + srednia);
+
+	}
+
+}
