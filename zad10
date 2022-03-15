@@ -1,0 +1,21 @@
+package olgamrowca;
+
+public class zadanie10 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double kosztAkcji;
+		double prowizja;
+		double kwota;
+		
+		kosztAkcji = 600*21.77;
+		prowizja= kosztAkcji * 0.02;
+		kwota= kosztAkcji+prowizja;
+		
+		System.out.println("Kwota zapłacona za same akcję, bez prowizji wynosi :" +kosztAkcji);
+		System.out.println("Wysokość prowizji za akcję wynosi :" + prowizja);
+		System.out.println("Kwota zapłacona za całość wynosi: "+ kwota);
+
+	}
+
+}
