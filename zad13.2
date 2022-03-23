@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class zadanie13 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner klawisz = new Scanner(System.in);
+		String wyb;
+		System.out.println("Wybierz pakiet A, B lub C");
+		wyb = klawisz.nextLine();
+		double cena;
+		int minuty;
+		int minuty1;
+		String A = "A";
+		String B = "B";
+		String C = "C";
+		
+		if(wyb.equals(A))
+			
+		{
+			System.out.println("Podaj, ile minut rozmów wykorzystałeś: ");
+			minuty = klawisz.nextInt();
+			if (minuty>450)
+			{
+			cena = minuty - 450;
+			cena = cena * 0.45;
+			cena = cena + 39.99;
+			System.out.println("Rachunek wynosi " + cena);
+			}
+			else if (minuty<450)
+			{
+				cena = 39.99;
+				System.out.println("Rachunek wynosi " + cena);
+			}
+		} 
+		
+		else if(wyb.equals(B))
+			
+		{
+			System.out.println("Podaj, ile minut rozmów wykorzystałeś: ");
+			minuty = klawisz.nextInt();
+			if (minuty>450)
+			{
+				cena = minuty - 900;
+				cena = cena * 0.40;
+				cena = cena + 39.99;
+			System.out.println("Rachunek wynosi " + cena);
+			}
+			else if (minuty<450)
+			{
+				cena = 59.99;
+				System.out.println("Rachunek wynosi " + cena);
+			}
+		} 
+		
+		else if (wyb.equals(C))
+			
+		{
+			cena = 69.99;
+			System.out.println("Rachunek wynosi " + cena);
+		}
+	}
+
+}
