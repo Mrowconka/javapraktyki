@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class zadanie5 {
+
+	public static void main(String[] args) {
+
+		Scanner klawisz = new Scanner(System.in);
+		System.out.println("Podaj mase obiektu: ");
+		double masa = klawisz.nextDouble();
+		masa = masa * 9.8;
+		if (masa > 1000) {
+			System.out.println("Obiekt jest za ciężki "+masa);
+		} else if (masa < 10) {
+			System.out.println("Obiekt jest za lekki "+masa);
+		} else {
+			System.out.println("Przedmiot waży"+masa);
+		}
+		klawisz.close();
+	}
+
+}
