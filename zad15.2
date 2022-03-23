@@ -1,0 +1,39 @@
+import java.util.Scanner;
+public class zadanie15 {
+
+	public static void main(String[] args) {
+
+        Scanner wczytaj = new Scanner(System.in);
+        
+        int liczbaCzekow;
+        double cenaDo20 = 0.1;
+        double cenaDo39 = 0.08;
+        double cenaDo59 = 0.06;
+        double cenaOd60 = 0.04;     
+        double podstawa = 10;        
+        double zaplata;
+        System.out.println("Podaj liczbę czeków");
+        liczbaCzekow = wczytaj.nextInt();
+        wczytaj.nextLine(); 
+        
+       if(liczbaCzekow<20) {
+            zaplata=podstawa+(cenaDo20*liczbaCzekow);
+        }
+        else if(liczbaCzekow<40){
+            zaplata=podstawa+(cenaDo39*liczbaCzekow);
+        }
+        else if(liczbaCzekow<60){
+            zaplata=podstawa+(cenaDo59*liczbaCzekow);
+        }
+        else {
+            zaplata=podstawa+(cenaOd60*liczbaCzekow);
+        }
+        System.out.println("Bank pobrał opłatę w wysokości "+zaplata+" zł");
+   
+wczytaj.close();
+
+    }
+
+}
+
+
