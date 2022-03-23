@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class zadanie12 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner wczytaj = new Scanner(System.in);
+		
+		String water = "woda",air = "powietrze",steel="stal";
+		double czas=0,odleglosc=0;
+		
+		System.out.println("Wybierz 1: \"woda\" \"powietrze\" \"stal\" - Wpisz poniżej ");
+		String wybor = wczytaj.nextLine();
+		
+		if (wybor.equals(water)) {
+			
+			System.out.println("Wybrałeś Wode!:) Podaj odległość: ");
+			odleglosc = wczytaj.nextDouble();
+			
+			czas = czas + odleglosc/1490;
+			
+			System.out.println("Wynik to: "+czas);
+			
+			
+		} else if (wybor.equals(air)) {
+			
+			System.out.println("Wybrałeś Powietrze!:) Podaj odległość: ");
+			odleglosc = wczytaj.nextDouble();
+			
+			czas = czas + odleglosc/343;
+			System.out.println("Wynik to: "+czas);
+			
+			
+		}else if (wybor.equals(steel)) {
+			
+			System.out.println("Wybrałeś Stal!:) Podaj odległość: ");
+			odleglosc = wczytaj.nextDouble();
+			
+			czas = czas + odleglosc/5100;
+			
+			System.out.println("Wynik to: "+czas);
+			
+		} else {
+			
+			
+			System.out.println("Niepoprawny wybór!");
+		}
+		
+			
+wczytaj.close();
+
+	}
+
+}
