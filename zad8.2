@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class zadanie8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner klawisz = new Scanner(System.in);
+		int sztuki;
+		int cena; 
+		double rabat;
+		
+		System.out.println("Podaj liczbę sztuk: ");
+		sztuki = klawisz.nextInt();
+		
+		if (sztuki>=100)
+		{
+			System.out.println("Twój rabat wynosi 50%.");
+			cena = 99*sztuki;
+			rabat = 0.5*cena;
+			System.out.println("Kwota zakupu po rabacie wynosi: " + rabat);
+		}
+		
+		
+		else if (sztuki>=50 && sztuki <100)
+		{
+			System.out.println("Twój rabat wynosi 40%.");
+			cena = 99*sztuki;
+			rabat = 0.4*cena;
+			System.out.println("Kwota zakupu po rabacie wynosi: " + rabat);
+		}
+		
+		
+		else if (sztuki>=20 && sztuki <49)
+		{
+			System.out.println("Twój rabat wynosi 30%.");
+			cena = 99*sztuki;
+			rabat = 0.3*cena;
+			System.out.println("Kwota zakupu po rabacie wynosi: " + rabat);
+		}
+		
+		else if (sztuki>=10 && sztuki <25)
+		{
+			System.out.println("Twój rabat wynosi 20%.");
+			cena = 99*sztuki;
+			rabat = 0.2*cena;
+			System.out.println("Kwota zakupu po rabacie wynosi: " + rabat);
+		}
+		
+	}
+
+}
