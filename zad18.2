@@ -1,0 +1,96 @@
+import java.util.Scanner;
+public class zadanie18 {
+
+ public static void main(String[] args) {
+    Scanner wczytaj = new Scanner(System.in);
+    
+    String odpowiedz;
+    String tak = "tak";
+    String nie = "nie";  
+    boolean wegetarianskie = true;
+    boolean weganskie = true ;
+    boolean bezglutenowe = true;
+    
+    System.out.println("Czy są jacyś wegetarianie?");
+    odpowiedz = wczytaj.nextLine();
+    if(odpowiedz.compareToIgnoreCase(tak)==0) {
+        wegetarianskie =true;    
+    }
+    else if(odpowiedz.compareToIgnoreCase(nie)==0) {
+        wegetarianskie = false;
+    }
+    else {
+        System.out.println("Wprowadzono złą odpowiedz");
+    }    
+    System.out.println("Czy są jacyś weganie?");
+    odpowiedz = wczytaj.nextLine();
+    if(odpowiedz.compareToIgnoreCase(tak)==0) {
+        weganskie =true;    
+    }
+    else if(odpowiedz.compareToIgnoreCase(nie)==0) {
+        weganskie = false;
+    }
+    else {
+        System.out.println("Wprowadzono złą odpowiedz");
+    }
+    System.out.println("Czy są jacyś bezglutenowcy?");
+    odpowiedz = wczytaj.nextLine();
+    if(odpowiedz.compareToIgnoreCase(tak)==0) {
+        bezglutenowe =true;    
+    }
+    else if(odpowiedz.compareToIgnoreCase(nie)==0) {
+        bezglutenowe = false;
+    }
+    else {
+        System.out.println("Wprowadzono złą odpowiedz");
+    }    
+    if(wegetarianskie==true) {
+        if(weganskie==true) {
+            if(bezglutenowe==true) {
+               System.out.println("Możecie sie wybrać do następujących restauracji:");
+                System.out.print("\"Kawiarnia na Rogu\" \n\"Kawiarnia u Szefa\"");
+            }
+            else {
+                System.out.println("Możecie się wybrać do następujących restauracji:");
+                System.out.print("\"Kawiarnia na Rogu\" \n\"Kawiarnia u Szefa\"");
+            }
+        }
+        else {
+            if(bezglutenowe==true) {
+                System.out.println("Możecie się wybrać do następujących restauracji:");
+                System.out.print("\"Kawiarnia na Rogu\" \n\"Kawiarnia u Szefa\" \n\"Pizzeria przy Dworcowej\"");
+            }
+            else {
+                System.out.println("Możecie się wybrać do nastepujących restauracji:");
+                System.out.print("\"Kawiarnia na Rogu\" \n\"Kawiarnia u Szefa\" \n\"Pizzeria przy Dworcowej\" \n\"Wloskie Specjaly\"");
+            }
+        }
+    }
+    else {
+        if(weganskie==true) {
+            if(bezglutenowe==true) {
+                System.out.println("Możecie się wybrać do następujących restauracji:");
+                System.out.print("\"Kawiarnia na Rogu\" \n\"Kawiarnia u Szefa\"");
+            }
+            else {
+                System.out.println("Możecie się wybrać do następujących restauracji:");
+                System.out.print("\"Kawiarnia na Rogu\" \n\"Kawiarnia u Szefa\"");
+            }
+        }
+        else {
+            if(bezglutenowe==true) {
+                System.out.println("Możecie się wybrać do następujacych restauracji:");
+                System.out.print("\"Kawiarnia na Rogu\" \n\"Kawiarnia u Szefa\" \n\"Pizzeria przy Dworcowej\"");
+            }
+            else {
+                System.out.println("Możecie się wybrać do następujących restauracji:");
+                System.out.print("\"Kawiarnia na Rogu\" \n\"Kawiarnia u Szefa\" \n\"Pizzeria przy Dworcowej\" \n\"Włoskie Specjały\" \n\"Luksusuwe Burgery u Jacka\"");
+            }
+        }       
+    }
+    
+    wczytaj.close();    
+}
+}
+
+
