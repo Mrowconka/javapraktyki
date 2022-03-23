@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class zadanie16{
+
+	public static void main(String[] args) {
+
+        Scanner klawisz = new Scanner(System.in);
+        int liczbaKsiazek;
+        int punktyZa0=0;
+        int punktyZa1=5;
+        int punktyZa2=15;
+        int punktyZa3=30;
+        int punktyZa4=60;
+        int punkty=0;
+        System.out.println("Podaj liczbe kupionych w ostatnim miesiacu książek");
+        liczbaKsiazek = klawisz.nextInt();
+        klawisz.nextLine();
+        if(liczbaKsiazek==0) {
+            punkty=punkty+punktyZa0;
+        }
+        else if(liczbaKsiazek==1) {
+            punkty = punkty+punktyZa1;
+        }
+        else if(liczbaKsiazek==2) {
+            punkty = punkty+punktyZa2;
+        }
+        else if(liczbaKsiazek==3) {
+            punkty=punkty+punktyZa3;
+        }
+        else {
+            punkty = punkty+punktyZa4;
+        }
+        System.out.println("Masz "+punkty+" punktóww");
+        klawisz.close();
+    }
+}
