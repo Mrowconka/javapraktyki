@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class zadanie1 {
+
+	public static void main(String[] args) {
+		
+		Scanner klawisz = new Scanner(System.in);
+		System.out.println("Podaj liczbe z przedziału od 1 do 10: ");
+		int liczba;
+		liczba = klawisz.nextInt();
+		
+		if(liczba == 1) {
+			System.out.println("Rzymski odpowiednik tej liczby to : I");
+		}
+		else if (liczba == 2) {
+			System.out.println("Rzymski odpowiednik tej liczby to : II");
+		}
+		else if(liczba == 3) {
+			System.out.println("Rzymski odpowiednik tej liczby to : III");
+		}
+		else if(liczba == 4) {
+			System.out.println("Rzymski odpowiednik tej liczby to : IV");
+		}
+		else if(liczba == 5) {
+			System.out.println("Rzymski odpowiednik tej liczby to : V");
+		}
+		else if(liczba == 6) {
+			System.out.println("Rzymski odpowiednik tej liczby to : VI");
+		}
+		else if(liczba == 7) {
+			System.out.println("Rzymski odpowiednik tej liczby to : VII");
+		}
+		else if(liczba == 8) {
+			System.out.println("Rzymski odpowiednik tej liczby to : VIII");
+		}
+		else if(liczba == 9) {
+			System.out.println("Rzymski odpowiednik tej liczby to : IX");
+		}
+		else if(liczba == 10) {
+			System.out.println("Rzymski odpowiednik tej liczby to : X");
+		}
+		else {
+			System.out.println("Rzymski odpowiednik tej liczby to : Nieznany klawisz");
+			klawisz.close();
+		}
+
+	}
+
+}
