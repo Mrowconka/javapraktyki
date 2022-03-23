@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class zadanie6 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner klawisz = new Scanner(System.in);
+
+
+  System.out.println("Wprowadz liczbe sekund: ");
+  int sekundy, minuty = 0, godziny = 0, dni=0,sekundy2 = 0;
+  sekundy = klawisz.nextInt(); 
+  
+  	if (sekundy >=60) {
+  		
+  		sekundy2 = sekundy + sekundy2;
+  		minuty = sekundy / 60;
+  		sekundy = sekundy - minuty * 60;
+  		if (minuty >= 60) {
+  			
+  			godziny = minuty / 60;
+  			minuty = minuty - (godziny * 60);
+  			
+  			
+  			if (godziny >= 24) {
+  				
+  				dni = godziny / 24;
+  				godziny = godziny - dni * 24;
+  				System.out.println("W "+sekundy2+" jest: "+sekundy+" sekund/a "+minuty+" minut/a "+godziny+" godzin/a "+dni+" dzien/dni");
+  			} else { 
+  				System.out.println("W "+sekundy2+" jest: "+sekundy+" sekund/a "+minuty+" minut/a "+godziny+" godzin/a "+dni+" dzien/dni");
+  			}
+  		} else {
+  			System.out.println("W "+sekundy2+" jest: "+sekundy+" sekund/a "+minuty+" minut/a "+godziny+" godzin/a "+dni+" dzien/dni");
+  		}
+  	} else {
+  		System.out.println("W "+sekundy2+" jest: "+sekundy+" sekund/a "+minuty+" minut/a "+godziny+" godzin/a "+dni+" dzien/dni");
+  	}
+  	klawisz.close();
+  
+	}
+
+}
