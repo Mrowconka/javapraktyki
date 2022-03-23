@@ -1,0 +1,40 @@
+import java.util.Scanner;
+public class zadanie4 {
+
+	public static void main(String[] args) {
+		Scanner klawisz = new Scanner(System.in);
+		
+		double a, b, c, srednia, wynik;
+		System.out.println("Podaj wynik w procentach pierwszego testu: ");
+		a = klawisz.nextDouble();
+		System.out.println("Podaj wynik wynik w procentach drugiego testu: ");
+		b = klawisz.nextDouble();
+		System.out.println("Podaj wynik w procentach trzeciego testu: ");
+		c = klawisz.nextDouble();
+		
+		wynik = a + b + c;
+		srednia = wynik/3;
+		
+		if(srednia>90) {
+			System.out.println("5");
+		}
+		else if(srednia>=80 && srednia <=89) {
+			System.out.println("4");
+		}
+		else if(srednia>=70 && srednia <=79) {
+			System.out.println("3");
+			
+		}
+		else if(srednia >=60 && srednia <=69) {
+			System.out.println("2");
+			
+		}
+		else if(srednia < 60) {
+			System.out.println("1");
+		}
+		klawisz.close();
+			}
+
+	}
+
+
