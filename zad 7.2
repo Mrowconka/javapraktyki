@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+
+public class zdaanie7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner klawisz = new Scanner(System.in);
+		List <String> cwele = new LinkedList<>();
+		
+		String imie1;
+		String imie2;
+		String imie3;
+		
+		System.out.println("Podaj pierwsze imię: ");
+		imie1 = klawisz.nextLine();
+		System.out.println("Podaj drugie imię: ");
+		imie2 = klawisz.nextLine();
+		System.out.println("Podaj trzecie imię: ");
+		imie3 = klawisz.nextLine();
+		
+		cwele.add(imie1);
+		cwele.add(imie2);
+		cwele.add(imie3);
+		
+		  Collections.sort(cwele);
+	        for (String cwel:cwele) 
+	        {
+	            System.out.println(cwel);
+	        }
+	}
+
+}
