@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class zadanie11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner klawisz = new Scanner(System.in);
+		String a, b, c;
+		double czas, czas2, czas3;
+		System.out.println("Podaj nazwisko pierwszego biegacza");
+		a = klawisz.nextLine();
+		System.out.println("Podaj nazwisko drugiego biegacza");
+		b = klawisz.nextLine();
+		System.out.println("Podaj nazwisko trzeciego biegacza");
+		c = klawisz.nextLine();
+		
+		System.out.println("Podaj czas pierwszego biegacza");
+		czas = klawisz.nextDouble();
+		System.out.println("Podaj czas drugiego biegacza");
+		czas2 = klawisz.nextDouble();
+		System.out.println("Podaj czas trzeciego biegacza");
+		czas3 = klawisz.nextDouble();
+		
+		if (czas<czas2&&czas<czas3&&czas2<czas3) {
+			System.out.println("Nr1: " + a + " Nr2: " + b + " Nr3: " + c);
+			}
+			else if (czas>czas2&&czas<czas3&&czas2<czas3) {
+			System.out.println("Nr1: " + b + " Nr2: " + a + " Nr3: " + c);
+			}
+			else if (czas<czas2&&czas>czas3&&czas2>czas3) {
+			System.out.println("Nr1: " + c + " Nr2: " + a + " Nr3: " + b);
+			}
+			else if (czas<czas2&&czas<czas3&&czas2>czas3) {
+			System.out.println("Nr1: " + a + " Nr2: " + c + " Nr3: " + b);
+			}
+			else if (czas>czas2&&czas>czas3&&czas2<czas3) {
+			System.out.println("Nr1: " + b + " Nr2: " + c + " Nr3: " + a);
+			}
+			else if (czas>czas2&&czas>czas3&&czas2<czas3) {
+			System.out.println("Nr1: "+ c + " Nr2: " + b + " Nr3: " + c );
+			}
+		klawisz.close();
+	}
+
+}
