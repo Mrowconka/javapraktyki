@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class zad10 {
+
+	public static void main(String[] args) {
+	
+		Scanner klawisz = new Scanner(System.in);
+		double kalorie, gramy,kalorieztluszczu, procentkalorii;
+		System.out.println("Wprowadz liczbę kalorii w produkcie");
+		kalorie = klawisz.nextDouble();
+		System.out.println("Wprowadz liczbę gramów w produkcie");
+		gramy = klawisz.nextDouble();
+		kalorieztluszczu = gramy*9;
+		procentkalorii=kalorieztluszczu/kalorie;
+		if(procentkalorii<0.3*kalorie) {
+		System.out.println("Produkt zawiera: "+kalorieztluszczu+" gram tłuszczu.Produkt jest niskotłuszczowy");
+		}
+		else {
+			System.out.println("Produkt nie jest niskotłuszczowy");
+		}
+		
+	}
+
+}
