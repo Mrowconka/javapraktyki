@@ -1,0 +1,33 @@
+package mrowca;
+import java.util.Scanner;
+public class zadanie2
+{
+		public static void main(String[] args)
+		
+		{
+			Scanner klawisz = new Scanner(System.in);
+			int x =0;
+			String a;
+			char b;
+			do
+			{
+			System.out.println("Podaj t,T,N lub n");
+			a = klawisz.next();
+			b = a.charAt(0);
+			if ((b == 'n') || (b =='N') || (b == 'T') || (b == 't'))
+			{
+				x = 0;
+			}
+			else
+			{
+				x =1;
+			}
+			}
+			while(x==1);
+			System.out.println("Dobrze podałeś DZIEKUJE :) ");
+		
+		
+
+	}
+
+}
