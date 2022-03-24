@@ -1,0 +1,31 @@
+package mrowca;
+
+import java.util.Scanner;
+public class zadanie9 {
+
+	public static void main(String[] args) {
+		Scanner kl=new Scanner(System.in);
+		String tak;
+		char tt;
+		int a,b,s=0,z=0;
+		do
+		{
+			System.out.println("podaj liczbe a:");
+			a=kl.nextInt();
+			System.out.println("podaj liczbe b:");
+			b=kl.nextInt();
+			s=s+(a+b);
+			System.out.println("suma: "+s);
+			System.out.println("powtorzyc (tak/nie): ");
+			tak=kl.next();
+			tt=tak.charAt(0);
+			if (tt=='t')
+			{z=1;}
+			else
+			{z=0;}
+		} while (z==1 );
+		
+		
+	}
+
+}
