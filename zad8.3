@@ -1,0 +1,21 @@
+package mrowca;
+import java.util.Scanner;
+public class zadanie8 {
+
+	public static void main(String[] args) {
+		Scanner klawisz=new Scanner(System.in);
+		int product=0,a;
+		do
+		{
+			System.out.println("podaj liczbe: ");
+			a=klawisz.nextInt();
+			product=product+(a*10);
+			System.out.println("(wyosi: "+product+" )");
+			
+		} while (product>=100);
+		
+		
+System.out.println("produck = "+product);
+	}
+
+}
