@@ -1,0 +1,30 @@
+package olga;
+import java.util.Scanner;
+public class zadanie2 {
+
+	public static void main(String[] args) {
+	Scanner klawisz = new Scanner(System.in);
+	
+	int godziny;
+	int szybkosc;
+	System.out.println("Podaj szybkośc pojazdu w kilometrach na godzine : ");
+	szybkosc = klawisz.nextInt();
+	System.out.println("Podaj liczbę godzin podróży : ");
+	godziny = klawisz.nextInt();
+	
+	
+	if(godziny<1 && szybkosc< 1)
+	{
+		System.out.println("Podano złe warości :(");
+	}
+	else 
+	{
+		for(int i = 1; i<=godziny; i++) {
+			double odleglosc = godziny*szybkosc;
+			System.out.println("Przebyta odległośc w "+i+" godzinie "+odleglosc*i/godziny);
+		}
+	}
+
+	}
+
+}
