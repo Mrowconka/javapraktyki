@@ -1,0 +1,43 @@
+package olga;
+import java.util.Scanner;
+public class zadanie8 {
+
+	public static void main(String[] args) {
+		
+		double sredni= 0;
+	    int Lcm=0;
+	    int Lm=0;
+		
+		
+		Scanner podaj=new Scanner(System.in);
+		
+		System.out.println("Podaj liczbę lat: ");
+		int lata = podaj.nextInt();
+		
+		
+		if(lata<1)System.out.println("Zła wartość");
+		else {
+		
+		for(int y =1; y<=lata; y++) {
+			
+			
+			for(int m=1; m<=12; m++) {
+				
+				System.out.println("Podaj liczbę cm opadów: ");
+				int opady = podaj.nextInt();
+				
+				if(opady<0)System.out.println("Wartosc ujemna");
+				else
+				Lcm = Lcm + opady;
+									 }
+								}
+		
+		System.out.println("Liczba miesiecy wynosi: "+ lata*12);
+			System.out.println("łączna liczba cm wynosi: "+ Lcm);
+			System.out.println("Średni poziom opadów wynosi: "+ Lcm/(lata*12));
+			
+			}
+
+}
+
+}
