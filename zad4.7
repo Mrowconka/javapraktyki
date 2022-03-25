@@ -1,0 +1,30 @@
+package olga;
+import java.util.Scanner;
+
+public class zadanie4 {
+
+	public static void main(String[] args) {
+	Scanner klawisz = new Scanner(System.in);
+	int dni;
+	System.out.println("Podaj ile dni przepracował pracownik: ");
+	dni = klawisz.nextInt();
+	
+	if(dni<=0) {
+		System.out.println("Podano złą wartość :( ");
+	}else {
+		double pensja = 0.01;
+		double suma = 0;
+		
+		for(int i = 1; i <= dni; i++ )
+		{
+			System.out.println(i+ " dni zarobi "+pensja+ " zł. ");
+			pensja*=2;
+			suma += pensja;
+		}
+		System.out.println("Łącznie zarobisz : "+suma+ " zł. ");
+	
+	}
+
+	}
+
+}
