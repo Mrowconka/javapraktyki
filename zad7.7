@@ -1,0 +1,75 @@
+import java.util.Scanner;
+public class kurwakurwa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		Scanner klawisz = new Scanner(System.in);
+//		
+//		System.out.println("Podaj liczbe pieter hotelu: ");
+//		int floors = klawisz.nextInt();
+//		
+//		while(floors<10) {
+//			System.out.println("Podales zle dane!");
+//		}
+//		
+//		System.out.println("Podaj liczbe pokoi hotelu: ");
+//		int rooms = klawisz.nextInt();
+//		
+//		System.out.println("Podaj liczbe zajetych pokoi hotelu: ");
+//		int rooms2 = klawisz.nextInt();
+//		
+//		if(rooms<10 || rooms2>rooms) {
+//			System.out.println("Podales zle dane!");
+//		}else if() {
+//			
+//		}
+		Scanner klawisz=new Scanner(System.in);
+		
+		double oblozenie=0;
+		double freerooms=0;
+		double rooms=0;
+		double rooms2=0;
+
+		System.out.println("Podaj liczbe pieter: ");
+		int floors = klawisz.nextInt();
+		
+		
+		
+		if(floors<1) {System.out.println("Zła wartosc!");}
+		else {
+			for(int i = 1; i<=floors; i++) {
+				
+				System.out.println("Podaj liczbe pokoi: ");
+				int pokoje = klawisz.nextInt();
+				
+				System.out.println("Podaj liczbe zajetch pokoi: ");
+				int Zpokoje = klawisz.nextInt();
+				
+				if(pokoje<10||Zpokoje>pokoje){System.out.println("Zła wartosc!");}
+				else {
+					
+					double Oblozenie = (double) Zpokoje/pokoje;
+					
+					int free = pokoje - Zpokoje;
+					
+					
+					
+					oblozenie = oblozenie+Oblozenie;
+					freerooms = freerooms+free;
+					rooms = rooms + pokoje;
+					rooms2 = rooms2 + Zpokoje;
+					
+					}	
+					
+				
+				}			
+			}
+					System.out.println("Obłożenie wynosi: "+oblozenie);
+					System.out.printf("Obłożenie wynosi: %,.2f \n",oblozenie);
+					System.out.println("Liczba wolnych pokoi wynosi: "+ (int)freerooms);
+					System.out.println("Liczba wszystkich pokoi wynosi: "+(int)rooms);
+					System.out.println("Liczba zajętych pokoi: "+ (int)rooms2);
+		
+	}
+
+}
