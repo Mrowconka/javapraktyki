@@ -1,0 +1,21 @@
+package zad7;
+import java.util.Scanner;
+public class zad6 {
+
+	public static void main(String[] args) 
+	{
+		Scanner klawisz = new Scanner(System.in);
+	    System.out.println("Wprowadz zdanie:");
+	    String ciag = klawisz.nextLine();
+	    System.out.println("Wprowadz znak by sprawdzic ile razy wystepuje w zdaniu:");
+	    char znak = klawisz.next().charAt(0);
+
+	    long c = ciag
+	            .chars()
+	            .mapToObj(d -> (char) d)
+	            .filter(d -> d == znak)
+	            .count();
+	    System.out.println(c);
+	}
+
+}
