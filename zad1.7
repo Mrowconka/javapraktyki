@@ -1,0 +1,20 @@
+package olga;
+import java.util.Scanner;
+public class zadanie1 {
+
+	public static void main(String[] args) {
+		
+		Scanner klawisz = new Scanner(System.in);
+		int liczba;
+		int suma=0;
+		System.out.println("Program oblicza sumę wszystkich licz od 1 do podanej przez ciebie liczby :) ");
+		System.out.println("Podj liczbę całkowitą dodatnią niezerową: ");
+		liczba = klawisz.nextInt();
+		for (int i=1;i<=liczba;i++)
+		{
+			suma+=i;
+		}
+		System.out.println("Suma ciągu liczb wynosi: "  +suma);
+	}
+
+}
