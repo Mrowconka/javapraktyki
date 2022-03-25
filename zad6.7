@@ -1,0 +1,24 @@
+package zad7;
+
+import java.util.Scanner;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class zad6 {
+
+	public static void main(String[] args) throws FileNotFoundException
+
+	{
+		PrintWriter zapis = new PrintWriter("zad6.txt");
+		Scanner klawisz = new Scanner(System.in);
+		System.out.println("Wprowadz zdanie:");
+		String ciag = klawisz.nextLine();
+		System.out.println("Wprowadz znak by sprawdzic ile razy wystepuje w zdaniu:");
+		char znak = klawisz.next().charAt(0);
+
+		long c = ciag.chars().mapToObj(d -> (char) d).filter(d -> d == znak).count();
+		zapis.println(c);
+		zapis.close();
+	}
+
+}
