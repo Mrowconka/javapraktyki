@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class zadanie10 {
+	
+	public static void main(String[] args) {
+		
+		Scanner wczytaj = new Scanner(System.in);
+		int min = 0,max = 0,temp = 0,temp2 = 0;
+			
+		System.out.println("Podaj serie liczb calkowitych!");
+		max = wczytaj.nextInt();
+		
+		do {
+			System.out.println("Podaj serie liczb calkowitych! (-99 aby zatrzymac!)");
+			temp = wczytaj.nextInt();
+			temp2 = temp;
+			if (temp > max) {
+				
+				max = temp;
+				
+			} if (temp == -99) {
+				
+				System.out.println("Najwi�ksza liczba z ci�gu: "+max+" Najmniejsza liczba z ci�gu: "+min);
+				System.exit(temp);
+			}
+				if (temp > temp2) {
+				
+				min = temp2;
+			
+			}
+				
+
+
+			
+			
+		} while (temp != -99);
+		
+	
+	}
+
+}
+
