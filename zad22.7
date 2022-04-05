@@ -1,0 +1,116 @@
+package olgamrowca;
+import java.io.*;
+import java.util.Scanner;
+import java.util.Random;
+public class zad22 {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner wczytaj = new Scanner(System.in);
+		 int licznik = 0;
+		Random r = new Random(); 
+		
+		int komputer=0,gracz=0,start=0,wygrana =0,wygranal=0,kasal=0,powtorka=0;;
+		System.out.println("Wpisz kwote!: ");
+		start = wczytaj.nextInt();
+		kasal = kasal + start;
+		System.out.println("Trwa Losowanie ");
+		int w =0,p = 0,s =0,d =0,m =0,b=0;
+		
+		do {
+
+		for (int i=0 ;i < 3 ;i++) {
+			int a = r.nextInt(6)+1;
+			switch(a) {
+			
+			case 1:
+				System.out.println("---------------");
+				System.out.println("Wisnie");
+				System.out.println("---------------");
+				w++;
+				break;
+			case 2:
+				System.out.println("---------------");
+				System.out.println("Pomarancze");
+				System.out.println("---------------");
+				p++;
+				break;
+			case 3:
+				System.out.println("---------------");
+				System.out.println("Sliwki");
+				System.out.println("---------------");
+				s++;
+				break;
+			case 4:
+				System.out.println("---------------");
+				System.out.println("Dzwonki");
+				System.out.println("---------------");
+				d++;
+				break;
+			case 5:
+				System.out.println("---------------");
+				System.out.println("Melony");
+				System.out.println("---------------");
+				m++;
+				break;
+			case 6:
+				System.out.println("---------------");
+				System.out.println("Bary");
+				System.out.println("---------------");
+				b++;
+				break;
+				
+				
+			}
+					
+		}
+		
+		if ( w == 2|| p == 2 || s == 2 || d == 2 || m == 2 || b == 2) {
+			
+			System.out.println("Trafiles pare!");
+			wygrana = start *2;
+			wygranal = wygrana + wygranal;
+			System.out.println("---------------");
+			System.out.println("Wygrales: "+wygrana);
+			System.out.println("---------------");
+		} else if ( w == 3 || p == 3 || s == 3 || d == 3 || m == 3 || b == 3) {
+			
+			System.out.println("JACKPOT!");
+			wygrana = start *3;
+			wygranal = wygrana + wygranal;
+			System.out.println("---------------");
+			System.out.println("Wygrales: "+wygrana);
+			System.out.println("---------------");
+			
+		} else {
+			
+			System.out.println("Przegrales!");
+			wygrana = 0;
+	
+			};
+		int odpowiedz;
+		System.out.println("Chcesz zagrac ponownie?(Tak[1]/Nie[2]) ");
+		odpowiedz = wczytaj.nextInt();
+			
+		while (odpowiedz == 1) {
+			powtorka++;
+			odpowiedz--;
+			}
+		
+	
+			while (odpowiedz == 2) {
+			powtorka = 0;
+			System.out.println("Lacznie wygrales: "+wygranal);
+			System.out.println("Lacznie wygrales: "+kasal);
+			odpowiedz--;
+			}
+			
+		} while ( powtorka >= 1);
+	
+		}
+	}
+
+
+	
