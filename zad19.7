@@ -1,0 +1,53 @@
+package olgamrowca;
+import java.util.Scanner;
+import java.util.Random;
+public class zad19 {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner wczytaj = new Scanner(System.in);
+		 int licznik = 0;
+		Random r = new Random(); 
+		
+		int wybor = 0;
+	
+		for (int i = 0; i < 10; i++) {
+		int a = r.nextInt(5);
+		switch(a) {
+		
+		case 1:
+			System.out.println("Wybierz 1 z 5 kolorów (1 - Czerwony, 2 - Zielony, 3 - Niebieski, 4 - Pomarańczowy, 5 - żótłty): ");
+			wybor = wczytaj.nextInt();
+			if (wybor == a ) {
+				licznik++;
+				break;
+			}
+		case 2:
+			System.out.println("Wybierz 1 z 5 kolorów (1 - Czerwony, 2 - Zielony, 3 - Niebieski, 4 - Pomarańczowy, 5 - żółty): ");
+			wybor = wczytaj.nextInt();
+			if (wybor == a ) {
+				licznik++;
+				break;
+			}
+		case 3:
+			System.out.println("Wybierz 1 z 5 kolorów (1 - Czerwony, 2 - Zielony, 3 - Niebieski, 4 - Pomarańczowy, 5 - żółty): ");
+			wybor = wczytaj.nextInt();
+			if (wybor == a ) {
+				licznik++;
+				break;
+			}
+		case 4:
+			System.out.println("Wybierz 1 z 5 kolorów (1 - Czerwony, 2 - Zielony, 3 - Niebieski, 4 - Pomarańczowy, 5 - żółty): ");
+			wybor = wczytaj.nextInt();
+			if (wybor == a ) {
+				licznik++;
+				break;
+			}
+		}
+		
+	}
+		System.out.println("Liczba poprawnych odpowiedzi: "+licznik);
+	}
+}
