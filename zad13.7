@@ -1,0 +1,30 @@
+package olgamrowca;
+import java.io.*;
+import java.util.Scanner;
+
+public class zad13 {
+
+	public static void main(String[] args)  throws FileNotFoundException {
+		System.out.println("Podaj nazwe pliku!(Bez Rozszerzenia)!: ");
+		Scanner wczytaj = new Scanner(System.in);
+		String nazwa;
+		nazwa = wczytaj.nextLine();
+		Scanner odczyt = new Scanner(new File(nazwa+".txt"));
+		
+			for (int i = 0; i < 5; i++) {
+				
+				String text = odczyt.nextLine();
+				System.out.println(text);
+			}
+
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
+
