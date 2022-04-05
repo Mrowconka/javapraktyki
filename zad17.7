@@ -1,0 +1,34 @@
+package olgamrowca;
+import java.io.*;
+import java.util.Scanner;
+import java.util.Random;
+public class zad17 {
+
+	public static void main(String[] args) {
+		
+		Scanner klawisz = new Scanner(System.in);
+		
+		Random r = new Random(); 
+		int a = r.nextInt(101);
+		
+		int liczba = 0;
+		
+		
+				System.out.println("Spróbuj szczęścia! Jaka liczbe wybierasz? [1-100]: ");
+		do { 
+		liczba = klawisz.nextInt();
+		if ( liczba > a) {
+			
+			System.out.println("Za duza liczba, idz w dół");
+			
+		} else if (liczba < a) {
+			
+			System.out.println("Za mała liczba, idz w górę");
+		}
+		
+		} while (a != liczba);
+			
+			System.out.println("Gratulacje! Odgadłeś/aś!");
+
+	}
+}
