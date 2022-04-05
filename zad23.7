@@ -1,0 +1,45 @@
+package olgamrowca;
+import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class zad23 {
+
+	public static void main(String[] args) throws IOException {
+		
+		Scanner klawisz = new Scanner(System.in);
+		
+		System.out.println("Podaj swoje imię i nazwisko: ");
+		String imieNazwisko = klawisz.nextLine();
+		System.out.println("Opisz siebie: ");
+		String opis = klawisz.nextLine();
+		
+		String htmlOpen = "<html>";
+		String headOpen = "<head>";
+		String headClose = "</head>";
+		String htmlBodyOpen = "<body>";
+		String htmlCenter = "<center>";
+		String htmlH1Open = "<h1 style='color:blue;'>";
+		String IN = imieNazwisko;
+		String htmlH1Close = "</h1>";
+		String htmlCenterC = "</center>";
+		String htmlHrOpen = "<hr style='color:red;'>";
+		String Opisosoby = opis;
+		String htmlHrClose = "</hr>";
+		String htmlBodyClose = "</body>";
+		String htmlClose = "</html>";
+		
+		String All = htmlOpen+headOpen+headClose+htmlBodyOpen+htmlCenter+htmlH1Open+IN+htmlH1Close+htmlCenterC+htmlHrOpen+Opisosoby+htmlHrClose+htmlBodyClose+htmlClose;
+		
+		FileWriter olga = new FileWriter("olga.html", true);
+		
+		PrintWriter printWriter = new PrintWriter(olga);
+		
+		printWriter.println(All);
+		
+		printWriter.close();
+	}
+
+}
