@@ -1,0 +1,35 @@
+package olgamrowca;
+import java.util.Scanner;
+public class zad16 {
+
+	public static void main(String[] args) {
+		Scanner klawisz = new Scanner(System.in);
+		int month = 0, suma = 0,month2 = 0,temp = 0;
+		System.out.println("Program oblicza różnicę między wydaną kwotą a budżetem");
+		System.out.println("Podaj swój miesięczny budżet: ");
+		 month = klawisz.nextInt();
+		
+		
+		
+		
+		do {
+			System.out.println("Podaj wydatki! (-99 aby zakonczyc): ");
+			 temp= klawisz.nextInt();
+			 
+			 suma = suma + temp;
+			 
+			
+			 
+			 if (temp == -99) {
+				 
+				 month = month - suma -99;
+					System.out.println("R�znica wynosi: "+month);
+			 
+			 }
+
+				
+			} while(temp != -99);
+				
+				
+		}
+	}
