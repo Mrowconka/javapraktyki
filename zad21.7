@@ -1,0 +1,56 @@
+package olgamrowca;
+import java.io.*;
+import java.util.Scanner;
+import java.util.Random;
+public class zad21 {
+
+	public static void main(String[] args) {
+		
+		
+		
+		Scanner wczytaj = new Scanner(System.in);
+		 int licznik = 0;
+		Random r = new Random(); 
+		
+		int komputer=0,gracz=0;
+	
+		for (int i = 0; i < 10; i++) {
+		int a = r.nextInt(6) +1;
+		int b = r.nextInt(6) +1;
+		System.out.println("Rzut Komputera: "+a);
+		System.out.println("Rzut Gracza "+b);
+		if(a>b) {
+			komputer++;
+			System.out.println("Tą runde wygrywa Komputer!");
+		} else if (b>a) {
+			
+			
+			gracz++;
+			System.out.println("Tą runde wygrywa Gracz!");
+			
+		} else {
+			
+			System.out.println("Remis!");
+		}
+			
+		System.out.println("-------------");
+		
+		}
+		
+		if (gracz > komputer) {
+			
+			System.out.println("Wygrywa gracz!");
+		} else if ( komputer > gracz) {
+			
+			System.out.println("Wygrywa komputer!");
+			
+		} else {
+			
+			System.out.println("Mamy remis!");
+		}
+		
+
+
+		
+		}
+	}
